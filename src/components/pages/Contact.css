@@ -1,0 +1,94 @@
+.contact-section {
+  margin-top: 20px;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contact-title {
+  font-size: 40px;
+  color: var(--text-primary);
+  font-family: var(--font-cyber);
+  margin-top: 10px;
+  font-weight: 600;
+  transition: color var(--transition-speed) ease;
+}
+
+.contact-form {
+  background: var(--card-bg);
+  padding: 40px;
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--accent-color);
+  border-right: 4px solid var(--accent-secondary);
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px var(--shadow-color);
+  transition: background var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.contact-form .form-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-color) !important;
+}
+
+.custom-input {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  background: var(--input-bg) !important;
+  border: 1px solid var(--card-border) !important;
+  color: var(--text-primary) !important;
+  border-radius: 0 !important;
+  padding: 12px 15px;
+  transition: all 0.3s ease, color var(--transition-speed) ease, background var(--transition-speed) ease;
+}
+
+.custom-input:focus {
+  background: var(--card-bg) !important;
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.25) !important;
+  outline: none;
+}
+
+.custom-input::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 0.5;
+}
+
+.contact-form .custom-btn {
+  width: 100%;
+  max-width: 260px;
+  margin-top: 15px;
+}
+
+.contact-text-animate {
+  opacity: 0;
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.contact-form-animate {
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 24px;
+    border-left: 1px solid var(--card-border);
+    border-top: 4px solid var(--accent-color);
+    border-bottom: 4px solid var(--accent-secondary);
+  }
+
+  .contact-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}

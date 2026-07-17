@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #020617;
+  --bg-gradient: radial-gradient(circle at 50% 50%, #030712 0%, #020617 100%);
+  --card-bg: rgba(6, 182, 212, 0.03);
+  --card-border: rgba(6, 182, 212, 0.15);
+  --card-hover-border: #00f0ff;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #00f0ff;
+  --accent-secondary: #d946ef;
+  --nav-bg: rgba(2, 4, 18, 0.6);
+  --nav-border: rgba(6, 182, 212, 0.2);
+  --input-bg: rgba(6, 182, 212, 0.05);
+  --shadow-color: rgba(0, 240, 255, 0.1);
+  --shadow-glow: 0 0 10px rgba(0, 240, 255, 0.3);
+  --shadow-glow-pink: 0 0 10px rgba(217, 70, 239, 0.3);
+  
+  --font-cyber: 'Orbitron', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+  
+  --transition-speed: 0.3s;
+  --toggler-filter: invert(1);
+}
+
+:root.light-theme {
+  --bg-color: #f8fafc;
+  --bg-gradient: radial-gradient(circle at 50% 50%, #ffffff 0%, #f1f5f9 100%);
+  --card-bg: rgba(2, 132, 199, 0.03);
+  --card-border: rgba(2, 132, 199, 0.15);
+  --card-hover-border: #0284c7;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-color: #0284c7;
+  --accent-secondary: #8b5cf6;
+  --nav-bg: rgba(255, 255, 255, 0.6);
+  --nav-border: rgba(2, 132, 199, 0.2);
+  --input-bg: rgba(2, 132, 199, 0.05);
+  --shadow-color: rgba(2, 132, 199, 0.08);
+  --shadow-glow: 0 0 10px rgba(2, 132, 199, 0.2);
+  --shadow-glow-pink: 0 0 10px rgba(139, 92, 246, 0.2);
+  --toggler-filter: invert(0);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  background-image: 
+    linear-gradient(var(--card-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--card-border) 1px, transparent 1px),
+    var(--bg-gradient);
+  background-size: 40px 40px;
+  color: var(--text-primary);
+  transition: background-color var(--transition-speed) ease, background-image var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
