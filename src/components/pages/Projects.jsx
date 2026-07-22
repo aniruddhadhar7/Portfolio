@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Projects.css";
-import swad from "../../assets/images/foodapp1.png";
+import swad from "../../assets/images/swad.jpg";
 import cert1 from "../../assets/images/certificate1.jpeg";
 import cert2 from "../../assets/images/certificate2.jpeg";
 import cert3 from "../../assets/images/certificate3.jpeg";
@@ -45,8 +45,8 @@ export default function Projects() {
       title: "Swad Food ordering",
       image: swad,
       description: "A responsive online food ordering and restaurant search website designed with an attractive UI using the MERN stack and Tailwind CSS.",
-      demo: "#",
-      github: "#",
+      demo: "https://swad-food-delivery.vercel.app/",
+      github: "https://github.com/aniruddhadhar7/Swad-Food-Delivery",
     },
   ];
 
